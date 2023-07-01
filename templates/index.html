@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Africal-Lipid-Calculator</title>
+    <style>
+      /* Add your custom CSS styles here */
+    </style>
+  </head>
+  <body>
+    <h1>Cholesterol Calculator</h1>
+
+    <form id="cholesterol-form" methods="POST">
+      <label for="ldl">LDL Cholesterol:</label>
+      <input
+        type="number"
+        id="ldl"
+        placeholder="input must be in milligram"
+        required
+      /><br />
+
+      <label for="hdl">HDL Cholesterol:</label>
+      <input
+        type="number"
+        id="hdl"
+        placeholder="input must be in milligram"
+        required
+      /><br />
+
+      <label for="triglycerides">Triglycerides:</label>
+      <input
+        type="number"
+        id="triglycerides"
+        placeholder="input must be in milligram"
+        required
+      /><br />
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result" style="display: none">
+      <h2>Results</h2>
+      <p>Total Cholesterol: <span id="total-cholesterol"></span></p>
+      <p>LDL Cholesterol: <span id="ldl-cholesterol"></span></p>
+      <p>Cholesterol Ratio: <span id="cholesterol-ratio"></span></p>
+    </div>
+
+    <script src="/static/cal.js"></script>
+  </body>
+</html>
