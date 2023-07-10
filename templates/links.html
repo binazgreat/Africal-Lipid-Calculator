@@ -11,7 +11,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body style="background-image: url(../images/image5.jpg); background-repeat: no-repeat; background-size: cover;">
+<body>
     <div class="top">
         <div class="left" style="
                  position:relative;
@@ -56,48 +56,12 @@
                 Log-in
             </button>
         </div>
-    </div>
-    <header class=" header">
-        <a href="#">
-            <img src="../images/newlogi.png" alt="africalc logo">
-        </a>
-        <h1>Cholesterol Calculator</h1>
-
-    </header>
-
-    <form class="cholesterol-form" methods="POST">
-        <div class="ldl">
-            <label for="ldl">LDL Cholesterol:</label>
-            <input type="number"
-                   id="ldl"
-                   placeholder="input must be in milligram"
-                   required /><br />
-        </div>
-        <div class="HDL">
-            <label for="hdl">HDL Cholesterol:</label>
-            <input type="number"
-                   id="hdl"
-                   placeholder="input must be in milligram"
-                   required /><br />
-        </div>
-
-        <div class="Trigycerides">
-            <label for="triglycerides">Triglycerides:</label>
-            <input type="number"
-                   id="triglycerides"
-                   placeholder="input must be in milligram"
-                   required /><br />
-        </div>
-        <button type="submit"><b>Calculate</b></button>
-    </form>
-
-    <div id="result" style="display: none">
-        <h2>Results</h2>
-        <p>Total Cholesterol: <span id="total-cholesterol"></span></p>
-        <p>LDL Cholesterol: <span id="ldl-cholesterol"></span></p>
-        <p>Cholesterol Ratio: <span id="cholesterol-ratio"></span></p>
-    </div>
-
-    <script src="/static/cal.js"></script>
+    </div>:
+    <div class="links">
+        <a href="https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/">==>NHS about cholestrol level</a> <br />
+        <a href="https://medlineplus.gov/lab-tests/cholesterol-levels/">==>medline plus</a><br />
+        <a href="https://en.wikipedia.org/wiki/Cholesterol#Clinical_significance">==>Wikipedia</a><br />
+        <a href="https://emedicine.medscape.com/article/2087735-overview">==>Medscape</a><br />
+    </div>  
 </body>
 </html>

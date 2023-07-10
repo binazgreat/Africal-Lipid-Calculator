@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body style="background-image: url(../images/image5.jpg); background-repeat: no-repeat; background-size: cover;">
-    <div class="top">
+    <div class ="top">
         <div class="left" style="
                  position:relative;
                  float:left;
@@ -46,50 +46,46 @@
         <div class="right" style="
     float:right;
     ">
-            <button style="border: hidden; background-color: #576f85; margin-top: 10px;">
-                <img _ngcontent-serverapp-c66="" alt="logo small" class="social-button__icon" src="../images/twitter.png" width="35" height="35">
-            </button>
-            <button style=" border: hidden; background-color: #576f85;">
+        <a href="www.twitter.com" target="_blank">
+           <img _ngcontent-serverapp-c66="" alt="logo small" class="social-button__icon" src="../images/twitter.png" width="35" height="35"> 
+        </a>
+        <a href="www.linkedin.com" target="_blank" style=" border: hidden; background-color: #576f85;">
                 <img _ngcontent-serverapp-c66="" alt="logo small" class="social-button__icon" src="../images/linkedin.png" width="35" height="35" style=" width: 35px; aspect-ratio: auto 35 / 35; height: 35px; background-color: white; border-radius: 25%; margin-left: 5px; margin-right: 5px; margin-top: 15px;">
-            </button>
-            <button style=" background-color: #0077b7; color: white; border: hidden; font-weight: bold; font-size: x-large; border-radius: 10%; margin-right: 15px; margin-bottom: 5px; margin-top: 0px; margin-left: 5px;">
+        </a>
+        <a href="login.html" 
+           target="popup" 
+           onclick="window.open('login.html','popup','width=600,height=600'); return false;"
+           style=" background-color: #0077b7; color: white; border: hidden; font-weight: bold; font-size: x-large; border-radius: 10%; margin-right: 15px; margin-bottom: 5px; margin-top: 0px; margin-left: 5px;">
                 Log-in
-            </button>
+        </a>
         </div>
     </div>
     <header class=" header">
         <a href="#">
             <img src="../images/newlogi.png" alt="africalc logo">
         </a>
-        <h1>Cholesterol Calculator</h1>
+        <h1>Well Come to africal cholesterol calculator</h1>
 
     </header>
+    <div class="aboutcholesterol">
+        <p>
+          Cholesterol is a waxy substance found in your blood. Your body needs cholesterol to build healthy cells, but high levels of cholesterol can increase your risk of heart disease. 
+          click <a href="blog.html" style="font-weight: bold; color: sandybrown; ">here</a> for more information. <br />   
+          <br />  
+          blood lipid level is measured from blood sample, and the commonly measured types are LDL, HDL, total Cholestero, LDL/HDL ratio and triglycerides, which help to predict the risk of cardiovascular disease like stroke, heart attack, etc..
+          click <a href="blog.html"style="font-weight: bold; color: sandybrown;">here</a> for more information.          
+        </p>
+    </div>
+    <div class="aboutus">
+        <p>if you have any 3 of the lipid level measured our calculator can give you the rest information</p>
+        <a href="login.html" 
+           target="popup" 
+           onclick="window.open('login.html','popup','width=600,height=600'); return false;">
+        please log in to proceed
+        </a> 
+    </div>
 
-    <form class="cholesterol-form" methods="POST">
-        <div class="ldl">
-            <label for="ldl">LDL Cholesterol:</label>
-            <input type="number"
-                   id="ldl"
-                   placeholder="input must be in milligram"
-                   required /><br />
-        </div>
-        <div class="HDL">
-            <label for="hdl">HDL Cholesterol:</label>
-            <input type="number"
-                   id="hdl"
-                   placeholder="input must be in milligram"
-                   required /><br />
-        </div>
 
-        <div class="Trigycerides">
-            <label for="triglycerides">Triglycerides:</label>
-            <input type="number"
-                   id="triglycerides"
-                   placeholder="input must be in milligram"
-                   required /><br />
-        </div>
-        <button type="submit"><b>Calculate</b></button>
-    </form>
 
     <div id="result" style="display: none">
         <h2>Results</h2>

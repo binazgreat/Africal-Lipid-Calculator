@@ -1,0 +1,260 @@
+:root {
+    --is-grey: #576f8500;
+    --btn-transition: 0.1s ease-out;
+    --circle-size: 4rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 8px;
+    /**background-color: #fe7a20;**/
+    border-radius: 20%;
+}
+
+.menu-open {
+    display: none;
+}
+
+.menu-open-button {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    height: var(--circle-size);
+    width: var(--circle-size);
+    margin-bottom: 10px;
+    margin-right: 8px;
+    border-block-color: antiquewhite;
+    border-color: black;
+}
+
+.menu-line {
+    margin: 2px auto;
+    width: 30px;
+    height: 2px;
+    background: white;
+}
+
+.menu-item {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    border-radius: 50%;
+    background-color: var(--is-grey);
+    height: var(--circle-size);
+    width: var(--circle-size);
+    margin-bottom: 5px;
+}
+
+meni-item img {
+    height: var(--circle-size);
+    width: var(--circle-size);
+    border-radius: 50%;
+
+}
+
+.menu-open-button:hover {
+    height: 4.1rem;
+    width: auto;
+    transition: 01s ease-out;
+}
+
+    .menu-open-button:hover .menu-line-1 {
+        margin-top: 13px;
+        transition: var(--btn-transition);
+    }
+
+    .menu-open-button:hover .menu-line {
+        margin-top: 6px auto;
+    }
+
+.menu-line-1 {
+    margin-top: 12px;
+}
+
+.menu-open:checked ~ .menu-open-button, .menu-open:checked ~ .menu-item {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 19px;
+    position: relative;
+}
+
+    .menu-open:checked ~ .menu-open-button > .menu-line-3 {
+        display: none;
+    }
+
+    .menu-open:checked ~ .menu-open-button > .menu-line-1 {
+        transform: rotate(45deg);
+        margin-top: 11.5px;
+        transition: var(--btn-transition);
+    }
+
+    .menu-open:checked ~ .menu-open-button > .menu-line-2 {
+        transform: rotate(-45deg);
+        margin-top: -1.5px;
+        transition: var(--btn-transition);
+    }
+
+.menu-open:checked ~ .menu-item {
+    display: flex;
+}
+
+    .menu-open:checked ~ .menu-item:hover {
+        background-color: white;
+        color: var(--is-grey);
+        border: 0.5px solid var(--is-grey);
+    }
+
+.header{
+    top:-14px;
+    }
+.header img {
+    float: left;
+    background: #555;
+    border-radius: 10%;
+    margin-top: 2%;
+    height: 65%;
+    width: 25%;
+    opacity: 0.8;
+    position: relative;
+    z-index: -5;
+    margin-left: 0;
+}
+
+.top {
+    position: fixed;
+    text-align: right;
+    background: #576f85;
+    background-size: cover;
+    width: 100%;
+    margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    padding-bottom: 0px;
+    border-bottom-width: 0px;
+    margin-bottom: 0px;
+    height: 11%;
+    bottom: 0px;
+}
+
+.header h1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 5em;
+    background-position: right;
+    position: inherit;
+    background-blend-mode: inherit;
+    padding-left: 5em;
+    font-style: italic;
+    font-family: fantasy;
+    color: #0014ff;
+    margin-top: 5%;
+    margin-left: 0px;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+}
+
+.cholesterol-form {
+    border-block-end-color: blue;
+    width: 40%;
+    height: 265px;
+    border: aliceblue;
+    position: inherit;
+    padding: 1em;
+    margin: auto;
+    padding-inline: 2em;
+    background-image: url(../images/image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    shape-rendering: auto;
+    text-align: center;
+}
+
+
+.cholesterol-form button{
+    background-color: #ccb394;
+    position: relative;
+    color: #ce6045;
+    font-size: x-large;
+}
+
+.HDL {
+    font-style: normal;
+    font-size: 1.5em;
+    color: #ffe2c4;
+    padding: 1em;
+}
+
+.Trigycerides {
+    font-style: normal;
+    font-size: 1.5em;
+    color: #ffe2c4;
+    padding: 1em;
+}
+
+.ldl {
+    font-style: normal;
+    font-size: 1.5em;
+    color: #ffe2c4;
+    padding: 1em;
+}
+
+.aboutcholesterol {
+    margin: auto;
+    float: right;
+    position: absolute;
+    left: 30%;
+    right: 10%;
+    top: 40%;
+}
+
+    .aboutcholesterol p {
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        font-size: x-large;
+        float: right;
+        margin-top: 5%;
+        margin-bottom: 0px;
+    }
+
+.aboutus {
+    margin: auto;
+    float: right;
+    position: absolute;
+    left: 30%;
+    right: 10%;
+    top: 80%;
+}
+
+    .aboutus p {
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        font-size: x-large;
+        float: right;
+        margin-bottom: 0px;
+    }
+
+    .aboutus a {
+        color: #ff7a20;
+        font-weight: bold;
+        font-size: x-large;
+        left: 80%;
+        margin-left: 65%;
+    }
+
+    .links {
+        margin-top: 10%;
+    }
+
+        .links a {
+            font-size:xx-large; 
+            color: blue;
+            padding: 2em;
+            font-weight: bold;
+            padding-inline:1em;
+        }

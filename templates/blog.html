@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Africal-Lipid-Calculator homepage</title>
+	<title>Africal-Lipid-Calculator homepage</title>
     <link rel="stylesheet" href="index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
@@ -11,8 +11,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body style="background-image: url(../images/image5.jpg); background-repeat: no-repeat; background-size: cover;">
-    <div class="top">
+<body>
+     <div class ="top">
         <div class="left" style="
                  position:relative;
                  float:left;
@@ -57,47 +57,5 @@
             </button>
         </div>
     </div>
-    <header class=" header">
-        <a href="#">
-            <img src="../images/newlogi.png" alt="africalc logo">
-        </a>
-        <h1>Cholesterol Calculator</h1>
-
-    </header>
-
-    <form class="cholesterol-form" methods="POST">
-        <div class="ldl">
-            <label for="ldl">LDL Cholesterol:</label>
-            <input type="number"
-                   id="ldl"
-                   placeholder="input must be in milligram"
-                   required /><br />
-        </div>
-        <div class="HDL">
-            <label for="hdl">HDL Cholesterol:</label>
-            <input type="number"
-                   id="hdl"
-                   placeholder="input must be in milligram"
-                   required /><br />
-        </div>
-
-        <div class="Trigycerides">
-            <label for="triglycerides">Triglycerides:</label>
-            <input type="number"
-                   id="triglycerides"
-                   placeholder="input must be in milligram"
-                   required /><br />
-        </div>
-        <button type="submit"><b>Calculate</b></button>
-    </form>
-
-    <div id="result" style="display: none">
-        <h2>Results</h2>
-        <p>Total Cholesterol: <span id="total-cholesterol"></span></p>
-        <p>LDL Cholesterol: <span id="ldl-cholesterol"></span></p>
-        <p>Cholesterol Ratio: <span id="cholesterol-ratio"></span></p>
-    </div>
-
-    <script src="/static/cal.js"></script>
 </body>
 </html>

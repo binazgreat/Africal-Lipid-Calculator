@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Signup form for Farmplus application -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form </title>
+    <link href="../static/login.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="../static/login.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <form method="post" autocomplete="off" onsubmit="preventDuplicates()" action="/contact-us/nhs-website-contact-us">
+
+        <div class="nhsuk-form-group nhsuk-u-margin-bottom-8" id="question_message">
+            <div data-maxlength="1500" data-module="character-count">
+                <label for="Message" class="nhsuk-label nhsuk-label--l">Your message for us</label>
+                <div class="nhsuk-hint" id="message_hint">
+                    Do not include confidential or medical information in your message.
+                </div>
+
+                <textarea data-val="true" data-val-required="Please leave a message" id="Message" name="Message" aria-describedby="message_hint Message-info" class="nhsuk-textarea js-character-count" rows="5"></textarea><span id="Message-info" class="nhsuk-hint nhsuk-character-count__message" aria-live="polite">You have 1500 characters remaining</span>
+            </div>
+        </div>
+
+        <div class="nhsuk-form-group nhsuk-u-margin-bottom-8" id="question_fullname">
+            <label for="FullName" class="nhsuk-label nhsuk-label--l">Full name (optional)</label>
+            <div class="nhsuk-hint" id="fullname_hint">
+                We will use the name you provide in any replies to your message. We will not use
+                your name for any other purpose.
+            </div>
+
+            <input type="text" autocomplete="name" data-val="true" data-val-maxlength="Full name can contain a maximum of 100 characters" data-val-maxlength-max="100" id="FullName" name="FullName" value="" aria-describedby="fullname_hint" class="nhsuk-input">
+        </div>
+
+        <div class="nhsuk-form-group nhsuk-u-margin-bottom-8" id="question_emailaddress">
+            <label for="EmailAddress" class="nhsuk-label nhsuk-label--l">Email address</label>
+            <div class="nhsuk-hint" id="emailaddress_hint">
+                We will use your email address to resolve the issue you are contacting us about
+                and reply to you. We may invite you to complete a voluntary short satisfaction survey. We
+                will not use your email address for any other purpose.
+            </div>
+
+            <input type="text" autocomplete="email" data-val="true" data-val-required="You must enter an email address" id="EmailAddress" name="EmailAddress" value="" aria-describedby="emailaddress_hint" class="nhsuk-input">
+        </div>
+
+
+        <div class="nhsuk-form-group nhsuk-u-margin-bottom-8" id="question_privacypolicyagreement">
+            <fieldset class="nhsuk-fieldset">
+                <legend class="nhsuk-heading-l">Privacy policy agreement</legend>
+                <div class="nhsuk-hint" id="privacypolicyagreement_hint">
+                    <p>You must confirm you have read and understood our <a target="_blank" href="#">privacy policy (opens in a new tab)</a> before sending.</p>
+                </div>
+
+                <div class="nhsuk-checkboxes">
+                    <div class="nhsuk-checkboxes__item">
+                        <input type="checkbox" data-val="true" data-val-required="Check the box to confirm you have read and understood our privacy policy" id="PrivacyPolicyAgreement" name="PrivacyPolicyAgreement" value="true" aria-describedby="privacypolicyagreement_hint" class="nhsuk-checkboxes__input">
+                        <label for="PrivacyPolicyAgreement" class="nhsuk-label nhsuk-checkboxes__label">
+                            I have read and understood the privacy policy
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <button id="submit-button" type="submit" class="nhsuk-button" aria-live="polite">Send message</button>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8JDzQy6vh9FMn38exIcV9xb2H9RzL36-3C8_yuLPYgKonTOZ5aW-UfXuA3w1xFF4Axam_J2nrEca6RPxT1XegZXRTkLqT3GmbbvaSuMM13M33LH3B7ZPnyqA4Wk4mog2EdGjPJRiagMOPbcIzANhdk8"><input name="PrivacyPolicyAgreement" type="hidden" value="false">
+    </form>
+</body>
+</html>
+
+
