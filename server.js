@@ -36,7 +36,7 @@ app.post('/login', async (req, res)=>{
         const check=await collection.findOne({email:req.body.email})
 
         if(check.password===req.body.password){
-            res.render('index.ejs',{ name: check.name})
+            res.render('blog.ejs',{ name: check.name})
         }
         else{
             res.send("wrong password")
