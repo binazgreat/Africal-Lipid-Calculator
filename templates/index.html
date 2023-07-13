@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Description of the page less than 150 characters">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
     <title>Africal-Lipid-Calculator homepage</title>
     <link rel="stylesheet" href="index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
@@ -10,8 +14,16 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+    <link rel="alternate stylesheet" type="text/css" href="narrow.css" title="narrow" />
+    <link rel="alternate stylesheet" type="text/css" href="wide.css" title="wide" />
+    <script src="dynamiclayout.js" type="text/javascript"></script>
 </head>
-<body style="background-image: url(../images/image5.jpg); background-repeat: no-repeat; background-size: cover;">
+<body>
     <div class="top">
         <div class="left" style="
                  position:relative;
@@ -65,7 +77,7 @@
 
     </header>
 
-    <form class="cholesterol-form" methods="POST">
+    <form class="cholesterol-form" id="cholesterol-form" methods="POST">
         <div class="ldl">
             <label for="ldl">LDL Cholesterol:</label>
             <input type="number"
@@ -88,16 +100,17 @@
                    placeholder="input must be in milligram"
                    required /><br />
         </div>
-        <button type="submit"><b>Calculate</b></button>
+        <button id="submit" type="submit"><b>Calculate</b></button>
     </form>
 
-    <div id="result" style="display: none">
-        <h2>Results</h2>
-        <p>Total Cholesterol: <span id="total-cholesterol"></span></p>
-        <p>LDL Cholesterol: <span id="ldl-cholesterol"></span></p>
-        <p>Cholesterol Ratio: <span id="cholesterol-ratio"></span></p>
+    <div class="result" id="result" style=" display: none; width: 40%; height: 265px; border: aliceblue; position: inherit; padding: 1em; margin: auto; padding-inline: 2em; background-image: url(../images/image2.jpg); background-repeat: no-repeat; background-size: cover; opacity: 0.9; color: #ffe2c4;  shape-rendering: auto; text-align: center; ">
+        <h2 style="color:#ffe2c4; font-size:xx-large;">Results</h2>
+        <p style="color:#ffe2c4; font-size:large;">Total Cholesterol: <span id="total-cholesterol"></span></pstyle="color:#ffe2c4;>
+        <p style="color:#ffe2c4; font-size:large;">LDL Cholesterol: <span id="ldl-cholesterol"></span></p>
+        <p style="color:#ffe2c4; font-size:large;">Cholesterol Ratio: <span id="cholesterol-ratio"></span></p>
     </div>
 
-    <script src="/static/cal.js"></script>
+
+    <script src="../static/cal.js"></script>
 </body>
 </html>

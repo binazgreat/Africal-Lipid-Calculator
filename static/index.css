@@ -44,22 +44,21 @@
 }
 
 .cholesterol-form {
-  border-block-end-color: blue;
-  width: 40%;
-  height: 265px;
-  border: aliceblue;
-  position: inherit;
-  padding: 1em;
-  margin: auto;
-  padding-inline: 2em;
-  background-image: url(../images/image2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.9;
-  shape-rendering: auto;
-  text-align: center;
+    border-block-end-color: blue;
+    width: 40%;
+    height: 265px;
+    border: aliceblue;
+    position: inherit;
+    padding: 1em;
+    margin: auto;
+    padding-inline: 2em;
+    background-image: url(../images/image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    shape-rendering: auto;
+    text-align: center;
 }
-
 
 .cholesterol-form button{
   background-color: #ccb394;
@@ -88,4 +87,3 @@
   color: #ffe2c4;
   padding: 1em;
 }
-

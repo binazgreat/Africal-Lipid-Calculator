@@ -2,8 +2,11 @@
     --is-grey: #576f8500;
     --btn-transition: 0.1s ease-out;
     --circle-size: 4rem;
+    background-image: url(../images/image5.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:100%;
 }
-
 .menu {
     display: flex;
     flex-direction: column;
@@ -110,7 +113,6 @@ meni-item img {
     }
 
 .header{
-    top:-14px;
     }
 .header img {
     float: left;
