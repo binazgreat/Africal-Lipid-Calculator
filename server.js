@@ -36,7 +36,7 @@ app.post('/login', async (req, res)=>{
         const check=await collection.findOne({email:req.body.email})
 
         if(check.password===req.body.password){
-            res.render('blog.ejs',{ name: check.name})
+            res.render('calc.ejs',{ name: check.name})
         }
         else{
             res.send("wrong password")
@@ -51,6 +51,6 @@ app.post('/login', async (req, res)=>{
 app.delete('/logout', (req, res) => {
     res.render('home.ejs');
 });
-app.listen(3000, () =>{
+app.listen(3050, () =>{
     console.log('port connected')
 })
