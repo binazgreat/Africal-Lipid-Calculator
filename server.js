@@ -16,6 +16,9 @@ app.use('/static', express.static('static'));
 app.get('/',(req, res) =>{ 
     res.render('home.ejs')
 })
+app.get('/blog',(req, res) =>{ 
+    res.render('blog.ejs')
+})
 app.get('/signup',(req, res) =>{ 
     res.render('signup.ejs')
 })
@@ -51,6 +54,6 @@ app.post('/login', async (req, res)=>{
 app.delete('/logout', (req, res) => {
     res.render('home.ejs');
 });
-app.listen(3050, () =>{
+app.listen(3000, () =>{
     console.log('port connected')
 })
