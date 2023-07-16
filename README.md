@@ -1,5 +1,5 @@
 # Africal-Lipid-Calculator
-![coverimage](/home/benson/Africal-lipid-final/Africal-Lipid-Calculator/static/images/Screenshot from 2023-07-16 19-58-46.png)
+![cover](/home/benson/Africal-lipid-final/Africal-Lipid-Calculator/static/images/cover.png)
 
 High levels of  LDL cholesterol can lead to heart attack, stroke, or other health problems. High levels of “good” HDL cholesterol may actually lower your risk for health problems. 
 We have designed a web application that can help individuals know the  amount and ratio  of  lipids in their blood, which will help them make appropriate lifestyle changes, and this will help in saving  lives.
@@ -14,8 +14,7 @@ We have designed a web application that can help individuals know the  amount an
 ---
 ## Built With    
 * HTML and CSS - The frontend technologies
-* Javascript - The Frontend Language
-* Flask - The Web Development Framework
+* Javascript and Nodejs- The backend technologies
 * MongoDB - Database Management System
  
 ## Future
