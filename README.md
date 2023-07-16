@@ -23,7 +23,7 @@ To add an email feature that will enable users to send their results to a medica
 
 ## How to contribute
 We welcome any contribution that would make this project better.
-You can send us an email with suggestions on how to improve this project
+You can contact us with suggestions on how to improve this project.
 
 ## Authors 
 
